@@ -1,0 +1,78 @@
+   /*
+   Buy me a Tree is free software: you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation, either version 2 of the License, or
+   any later version.
+    
+   Buy me a Tree is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+   GNU General Public License for more details.
+    
+    You should have received a copy of the GNU General Public License
+    along with Buy me a Tree. If not, see https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html.
+   */
+
+.bmat-button {
+   width: 70px;
+   height: 70px;
+   background-color: #f73b53;
+   border-radius: 50%;
+   box-shadow: 0 6px 10px 0 #666;
+   transition: all 0.1s ease-in-out;
+ 
+   font-size: 50px;
+   color: white;
+   text-align: center;
+   line-height: 70px;
+ 
+   position: fixed;
+   bottom: 25px;
+}
+
+.bmat-button.bmat-left {
+   left: 25px;
+}
+
+.bmat-button.bmat-right {
+   right: 25px;
+}
+ 
+.bmat-button:hover {
+   box-shadow: 0 6px 14px 0 #666;
+   transform: scale(1.05);
+   cursor: pointer;
+}
+
+/* Tooltip text */
+.bmat-button .bmat-tooltiptext {
+  font-size: 15px;
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  top: -5px;
+  /* right: 105%; */
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+.bmat-button.bmat-right .bmat-tooltiptext {
+  top: -5px;
+  right: 105%;
+}
+
+.bmat-button.bmat-left .bmat-tooltiptext {
+   top: -5px;
+   left: 105%;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.bmat-button:hover .bmat-tooltiptext {
+  visibility: visible;
+}
